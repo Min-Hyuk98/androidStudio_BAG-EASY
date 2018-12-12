@@ -38,29 +38,14 @@
 
         <activity
             android:name=".AboutUs">
-            <intent-filter>
-                <action android:name="android.intent.action.ABOUTUS" />
-
-                <category android:name="android.intent.category.DEAFAULT" />
-            </intent-filter>
         </activity>
 
         <activity
             android:name=".Review">
-            <intent-filter>
-                <action android:name="android.intent.action.REVIEW" />
-
-                <category android:name="android.intent.category.DEAFAULT" />
-            </intent-filter>
         </activity>
 
         <activity
             android:name=".MyPage">
-            <intent-filter>
-                <action android:name="android.intent.action.MYPAGE" />
-
-                <category android:name="android.intent.category.DEAFAULT" />
-            </intent-filter>
         </activity>
 
         <activity

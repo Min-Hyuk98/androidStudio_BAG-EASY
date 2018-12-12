@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class Review extends AppCompatActivity {
@@ -38,5 +39,30 @@ public class Review extends AppCompatActivity {
                         return false;
                     }
                 });
+
+/*
+        ImageButton.OnClickListener onClickListener = new ImageButton.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                switch (view.getId()) {
+                    case R.id.button_write_review:
+                        startActivity(new Intent(Review.this, Review.class));
+                        break;
+                }
+            }
+        };
+        ImageButton button_write_review = (ImageButton) findViewById(R.id.button_seoul) ;
+        button_write_review.setOnClickListener(onClickListener) ;
+        */
+
+        ImageButton buttonWriteReview = (ImageButton) findViewById(R.id.button_write_review) ;
+        buttonWriteReview.setOnClickListener(new ImageButton.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Review.this, Home.class));
+            }
+        }) ;
+
+
     }
 }
