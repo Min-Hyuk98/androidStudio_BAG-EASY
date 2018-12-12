@@ -6,48 +6,46 @@
     android:layout_height="match_parent"
     android:background="@drawable/home_background">
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="328dp"
+            android:layout_height="64dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.583"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/bag_easy" />
 
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="328dp"
-        android:layout_height="64dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.583"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bag_easy" />
-
-    <android.support.design.widget.BottomNavigationView
-        android:id="@+id/bottom_navigation_home"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#34AD97"
-        app:itemIconTint="@color/iconText"
-        app:itemTextColor="@color/iconText"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_navigation_home"/>
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/bottom_navigation_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#34AD97"
+            app:itemIconTint="@color/iconText"
+            app:itemTextColor="@color/iconText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_navigation_home" />
 
     <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="178dp"
+        android:id="@+id/button_seoul"
+        android:layout_width="203dp"
         android:layout_height="128dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="48dp"
         android:scaleType="centerCrop"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:layout_constraintEnd_toStartOf="@+id/button_busan"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:srcCompat="@drawable/seoul" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="178dp"
+        android:id="@+id/button_busan"
+        android:layout_width="158dp"
         android:layout_height="128dp"
         android:layout_marginEnd="16dp"
         android:layout_marginTop="48dp"
@@ -57,40 +55,70 @@
         app:srcCompat="@drawable/busan" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="110dp"
+        android:id="@+id/button_jeju"
+        android:layout_width="116dp"
         android:layout_height="128dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
-        app:layout_constraintStart_toEndOf="@+id/imageButton4"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@+id/button_incheon"
+        app:layout_constraintTop_toBottomOf="@+id/button_busan"
         app:srcCompat="@drawable/jeju" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="110dp"
+        android:id="@+id/button_incheon"
+        android:layout_width="123dp"
         android:layout_height="128dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:scaleType="centerCrop"
-        app:layout_constraintStart_toEndOf="@+id/imageButton5"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:layout_constraintStart_toEndOf="@+id/button_jeonju"
+        app:layout_constraintTop_toBottomOf="@+id/button_busan"
         app:srcCompat="@drawable/incheon" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
-        android:layout_width="110dp"
-        android:layout_height="128dp"
-        android:layout_marginStart="16dp"
+        android:id="@+id/button_jeonju"
+        android:layout_width="111dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/button_seoul"
         app:srcCompat="@drawable/jeonju" />
 
+    <ImageButton
+        android:id="@+id/button_daegu"
+        android:layout_width="155dp"
+        android:layout_height="128dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_jeonju"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/daegu" />
+
+    <ImageButton
+        android:id="@+id/button_yeosu"
+        android:layout_width="210dp"
+        android:layout_height="128dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/button_daegu"
+        app:layout_constraintTop_toBottomOf="@+id/button_jeju"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/yeosu" />
 
 </android.support.constraint.ConstraintLayout>
