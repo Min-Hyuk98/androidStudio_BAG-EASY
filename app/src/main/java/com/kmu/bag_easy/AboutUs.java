@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class AboutUs extends AppCompatActivity {
@@ -38,5 +39,8 @@ public class AboutUs extends AppCompatActivity {
                         return false;
                     }
                 });
+
+
+
     }
 }
