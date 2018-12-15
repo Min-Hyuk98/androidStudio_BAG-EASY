@@ -6,17 +6,17 @@
     android:layout_height="match_parent"
     android:background="@drawable/home_background">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="328dp"
-            android:layout_height="64dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginTop="48dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.583"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/bag_easy" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="328dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bag_easy" />
 
         <android.support.design.widget.BottomNavigationView
             android:id="@+id/bottom_navigation_home"
@@ -35,7 +35,7 @@
         android:layout_height="128dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="12dp"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toStartOf="@+id/button_busan"
         app:layout_constraintHorizontal_bias="0.0"
@@ -48,7 +48,7 @@
         android:layout_width="158dp"
         android:layout_height="128dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="12dp"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
@@ -63,7 +63,7 @@
         android:layout_marginTop="8dp"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/button_incheon"
         app:layout_constraintTop_toBottomOf="@+id/button_busan"
         app:srcCompat="@drawable/jeju" />
@@ -72,7 +72,7 @@
         android:id="@+id/button_incheon"
         android:layout_width="123dp"
         android:layout_height="128dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="12dp"
         android:layout_marginTop="8dp"
         android:scaleType="centerCrop"
         app:layout_constraintStart_toEndOf="@+id/button_jeonju"
@@ -115,7 +115,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_jeju"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.033"
         app:srcCompat="@drawable/yeosu" />
 
 </android.support.constraint.ConstraintLayout>
