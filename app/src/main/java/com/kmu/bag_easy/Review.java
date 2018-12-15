@@ -59,7 +59,7 @@ public class Review extends AppCompatActivity {
         buttonWriteReview.setOnClickListener(new ImageButton.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Review.this, Home.class));
+                startActivity(new Intent(Review.this, WriteReview.class));
             }
         }) ;
 
