@@ -10,6 +10,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.RadioGroup;
@@ -26,7 +27,7 @@ class ReviewDB extends SQLiteOpenHelper {
 
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("CREATE TABLE contacts ( _id INTEGER PRIMARY KEY" +
-                " AUTOINCREMENT, name TEXT, point TEXT);");
+                " AUTOINCREMENT, name TEXT, text TEXT);");
     }
 
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
@@ -39,7 +40,7 @@ class ReviewDB extends SQLiteOpenHelper {
 public class WriteReview extends AppCompatActivity {
     ReviewDB helper;
     SQLiteDatabase db;
-    EditText edit_name, edit_point;
+    EditText edit_name, edit_text;
 
     public void onCreate(Bundle savedInstanceState) {
 
@@ -51,8 +52,8 @@ public class WriteReview extends AppCompatActivity {
         } catch (SQLiteException ex) {
             db = helper.getReadableDatabase();
         }
-        edit_name = (EditText) findViewById(R.id.reviewText);
-        edit_point = (EditText) findViewById(R.id.reviewPoint);
+        edit_name = (EditText) findViewById(R.id.reviewName);
+        edit_text = (EditText) findViewById(R.id.reviewText);
 
         ImageButton buttonWriteReview = (ImageButton) findViewById(R.id.button_submit_review) ;
         buttonWriteReview.setOnClickListener(new ImageButton.OnClickListener() {
@@ -65,26 +66,15 @@ public class WriteReview extends AppCompatActivity {
 
     public void insert(View target) {
         String name = edit_name.getText().toString();
-        String point = edit_point.getText().toString();
-        db.execSQL("INSERT INTO contacts VALUES (null, '" + name + "', '" + point
-                + "');");
-        Toast.makeText(getApplicationContext(), "성공적으로 추가되었음",
+        String text = edit_text.getText().toString();
+
+        db.execSQL("INSERT INTO contacts VALUES (null, '" + name + "', '" + text + "');");
+        Toast.makeText(getApplicationContext(), "성공적으로 저장되었습니다. 제출하기 버튼을 누르세요",
                 Toast.LENGTH_SHORT).show();
         edit_name.setText("");
-        edit_point.setText("");
+        edit_text.setText("");
     }
-/*
-    public void search(View target) {
-        String name = edit_name.getText().toString();
-        Cursor cursor;
-        cursor = db.rawQuery("SELECT name, tel FROM contacts WHERE name='"
-                + name + "';", null);
 
-        while (cursor.moveToNext()) {
-            String tel = cursor.getString(1);
-            edit_point.setText(tel);
-        }
-    }
-    */
+
 }
 

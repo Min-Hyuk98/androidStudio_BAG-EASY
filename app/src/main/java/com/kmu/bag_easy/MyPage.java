@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class MyPage extends AppCompatActivity {
@@ -38,5 +39,13 @@ public class MyPage extends AppCompatActivity {
                         return false;
                     }
                 });
+
+        Button buttonWriteReview = (Button) findViewById(R.id.to_my_review) ;
+        buttonWriteReview.setOnClickListener(new ImageButton.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MyPage.this, Review.class));
+            }
+        }) ;
     }
 }

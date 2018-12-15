@@ -46,73 +46,44 @@ public class Home extends AppCompatActivity {
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.button_seoul :
-                        startActivity(new Intent(Home.this, AboutUs.class));
+                        startActivity(new Intent(Home.this, Book1.class));
                         break ;
                     case R.id.button_busan :
-                        startActivity(new Intent(Home.this, AboutUs.class));
+                        startActivity(new Intent(Home.this, Book1.class));
                         break ;
                     case R.id.button_jeonju :
-                        startActivity(new Intent(Home.this, AboutUs.class));
+                        startActivity(new Intent(Home.this, Book1.class));
                         break ;
                     case R.id.button_incheon :
-                        startActivity(new Intent(Home.this, AboutUs.class));
+                        startActivity(new Intent(Home.this, Book1.class));
                         break ;
                     case R.id.button_jeju :
-                        startActivity(new Intent(Home.this, AboutUs.class));
+                        startActivity(new Intent(Home.this, Book1.class));
                         break ;
                     case R.id.button_daegu :
-                        startActivity(new Intent(Home.this, AboutUs.class));
+                        startActivity(new Intent(Home.this, Book1.class));
                         break ;
                     case R.id.button_yeosu :
-                        startActivity(new Intent(Home.this, AboutUs.class));
+                        startActivity(new Intent(Home.this, Book1.class));
                         break ;
                 }
-            }
-        } ;
+    }
+} ;
         ImageButton button_seoul = (ImageButton) findViewById(R.id.button_seoul) ;
-        button_seoul.setOnClickListener(onClickListener) ;
-        ImageButton button_busan = (ImageButton) findViewById(R.id.button_busan) ;
-        button_busan.setOnClickListener(onClickListener) ;
-        ImageButton button_jeonju = (ImageButton) findViewById(R.id.button_jeonju) ;
-        button_jeonju.setOnClickListener(onClickListener) ;
-        ImageButton button_incheon = (ImageButton) findViewById(R.id.button_incheon) ;
-        button_incheon.setOnClickListener(onClickListener) ;
-        ImageButton button_jeju = (ImageButton) findViewById(R.id.button_jeju) ;
-        button_jeju.setOnClickListener(onClickListener) ;
-        ImageButton button_daegu = (ImageButton) findViewById(R.id.button_daegu) ;
-        button_daegu.setOnClickListener(onClickListener) ;
-        ImageButton button_yeosu = (ImageButton) findViewById(R.id.button_yeosu) ;
-        button_yeosu.setOnClickListener(onClickListener) ;
+                button_seoul.setOnClickListener(onClickListener) ;
+                ImageButton button_busan = (ImageButton) findViewById(R.id.button_busan) ;
+                button_busan.setOnClickListener(onClickListener) ;
+                ImageButton button_jeonju = (ImageButton) findViewById(R.id.button_jeonju) ;
+                button_jeonju.setOnClickListener(onClickListener) ;
+                ImageButton button_incheon = (ImageButton) findViewById(R.id.button_incheon) ;
+                button_incheon.setOnClickListener(onClickListener) ;
+                ImageButton button_jeju = (ImageButton) findViewById(R.id.button_jeju) ;
+                button_jeju.setOnClickListener(onClickListener) ;
+                ImageButton button_daegu = (ImageButton) findViewById(R.id.button_daegu) ;
+                button_daegu.setOnClickListener(onClickListener) ;
+                ImageButton button_yeosu = (ImageButton) findViewById(R.id.button_yeosu) ;
+                button_yeosu.setOnClickListener(onClickListener) ;
 
 
     }
-
-
-
-/*
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.home_menu:
-                Intent i1 = new Intent(this,Home.class);
-                this.startActivity(i1);
-                return true;
-            case R.id.about_us_menu:
-                Intent i2 = new Intent(this,AboutUs.class);
-                this.startActivity(i2);
-                return true;
-            case R.id.review_menu:
-                Intent i3 = new Intent(this,Review.class);
-                this.startActivity(i3);
-                return true;
-            case R.id.myPage_menu:
-                Intent i4 = new Intent(this,MyPage.class);
-                this.startActivity(i4);
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }
-
-*/
-
 }

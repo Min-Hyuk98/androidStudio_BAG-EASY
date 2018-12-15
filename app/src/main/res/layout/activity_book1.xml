@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="363dp"
+        android:layout_height="551dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp">
+
+        <TableLayout
+            android:layout_width="336dp"
+            android:layout_height="26dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="210dp">
+
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:hint="Name"
+                    android:inputType="textPersonName"
+                    android:text="CU" />
+
+
+                <EditText
+                    android:id="@+id/phone1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:hint="phone"
+                    android:inputType="textPersonName"
+                    android:text="02-512-6588" />
+            </TableRow>
+            <TableRow>
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:text="예약하기"
+                android:textColor="#34AD97" />
+
+                <Button
+                    android:id="@+id/map1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:text="지도"
+                    android:textAlignment="textStart"
+                    android:textColor="#34AD97" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:hint="Name"
+                    android:inputType="textPersonName"
+                    android:text="StyleNanda" />
+
+
+                <EditText
+                    android:id="@+id/phone2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:hint="phone"
+                    android:inputType="textPersonName"
+                    android:text="02-752-4546" />
+
+
+            </TableRow>
+
+
+            <TableRow>
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:text="예약하기"
+                    android:textColor="#34AD97"
+                    />
+
+                <Button
+                    android:id="@+id/map2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:text="지도"
+                    android:textAlignment="textStart"
+                    android:textColor="#34AD97" />
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/name3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:hint="Name"
+                    android:inputType="textPersonName"
+                    android:text="GS25" />
+
+
+                <EditText
+                    android:id="@+id/phone3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:hint="phone"
+                    android:inputType="textPersonName"
+                    android:text="02-909-3231" />
+            </TableRow>
+
+            <TableRow>
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:text="예약하기"
+                android:textColor="#34AD97"
+                />
+
+                <Button
+                    android:id="@+id/map3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:text="지도"
+                    android:textAlignment="textStart"
+                    android:textColor="#34AD97" />
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/name4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:hint="Name"
+                    android:inputType="textPersonName"
+                    android:text="CGV" />
+
+
+                <EditText
+                    android:id="@+id/phone4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:hint="phone"
+                    android:inputType="textPersonName"
+                    android:text="1544-1122" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:text="예약하기"
+                    android:textColor="#34AD97" />
+
+                <Button
+                    android:id="@+id/map4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:text="지도"
+                    android:textAlignment="textStart"
+                    android:textColor="#34AD97" />
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/name5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:hint="Name"
+                    android:inputType="textPersonName"
+                    android:text="DAISO" />
+
+
+                <EditText
+                    android:id="@+id/phone5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:hint="phone"
+                    android:inputType="textPersonName"
+                    android:text="02-733-6016" />
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:text="예약하기"
+                    android:textColor="#34AD97" />
+                <Button
+                    android:id="@+id/map5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:text="지도"
+                    android:textAlignment="textStart"
+                    android:textColor="#34AD97" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>
